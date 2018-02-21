@@ -19,8 +19,7 @@ and the dependency:
 	<dependency>
 	    <groupId>com.github.ricardo7227</groupId>
 	    <artifactId>AsteriskUtils</artifactId>
-	    <version>Claudia-0.2.2</version>
+	    <version>Claudia-0.2.3</version>
 	</dependency>
 
 ```
-

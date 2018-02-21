@@ -47,7 +47,7 @@ public class User {
         this.email = email;
         this.fecha_activacion = new Date(new java.util.Date().getTime());
         this.activo = true;
-        this.codigo_activacion = "default_activation";
+        this.codigo_activacion = utilidades.UtilsRandom.randomAlphaNumeric(15);
     }
 
     public long getId() {
