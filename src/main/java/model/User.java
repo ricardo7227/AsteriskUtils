@@ -6,6 +6,7 @@
 package model;
 
 import java.sql.Date;
+import utilidades.UtilsRandom;
 
 /**
  *
@@ -47,7 +48,7 @@ public class User {
         this.email = email;
         this.fecha_activacion = new Date(new java.util.Date().getTime());
         this.activo = true;
-        this.codigo_activacion = utilidades.UtilsRandom.randomAlphaNumeric(15);
+        this.codigo_activacion = UtilsRandom.randomAlphaNumeric(15);
     }
 
     public long getId() {
