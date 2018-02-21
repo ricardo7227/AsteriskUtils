@@ -24,6 +24,32 @@ public class User {
     public User() {
     }
 
+    public User(long id, String nombre, String password, boolean activo, String codigo_activacion, Date fecha_activacion, String email) {
+        this.id = id;
+        this.nombre = nombre;
+        this.password = password;
+        this.activo = activo;
+        this.codigo_activacion = codigo_activacion;
+        this.fecha_activacion = fecha_activacion;
+        this.email = email;
+    }
+
+    /**
+     * Construye un objeto usuario validado
+     *
+     * @param nombre
+     * @param password
+     * @param email
+     */
+    public User(String nombre, String password, String email) {
+        this.nombre = nombre;
+        this.password = password;
+        this.email = email;
+        this.fecha_activacion = new Date(new java.util.Date().getTime());
+        this.activo = true;
+        this.codigo_activacion = "default_activation";
+    }
+
     public long getId() {
         return id;
     }
