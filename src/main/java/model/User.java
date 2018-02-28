@@ -112,7 +112,7 @@ public class User {
         int hash = 7;
         return hash;
     }
-
+//Override para comparar objetos
     @Override
     public boolean equals(Object obj) {
         User user2 = (User) obj;
