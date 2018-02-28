@@ -36,6 +36,7 @@ public class User {
     }
 
     /**
+     * 
      * Construye un objeto usuario validado
      *
      * @param nombre
